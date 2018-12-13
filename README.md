@@ -5,9 +5,24 @@ I tried to compile the [winexe](https://github.com/opinkerfi/winexe-waf) from so
 
 Then I  write this dockerfile in 5 minutue and it works!
 
-Usage:
+
+
+
+If you want get image from dockerhub:
 ```
-$ sudo docker run -it your_id_image build/winexe -U user%password //8.8.8.8 'cmd'`
+$ sudo docker pull vpershin93/winexe-docker
+```
+or build dockerfile:
+```
+git clone https://github.com/VladislavPershin/winexe-docker.git
+cd winexe-docker
+sudo docker build .
+
+```
+
+Usage `winexe`
+```
+$ sudo docker run -it vpershin93/winexe-docker build/winexe -U user%password //8.8.8.8 'cmd'
 Microsoft Windows [Version 6.3.9600]
 (c) 2013 Microsoft Corporation. All rights reserved.
 
